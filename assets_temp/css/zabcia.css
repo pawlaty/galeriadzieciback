@@ -1,0 +1,100 @@
+h1, h2{
+  text-align: center;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/06.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.collection{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.one_post{
+  margin: 1em;
+  transition: all .4s ease-in-out;
+  padding: 5px;
+  padding-bottom: 2px;
+ 
+}
+
+.one_post:hover{
+  box-shadow: 0 0 10px 10px black;
+}
+
+.review{
+  top:5rem;
+  
+  display:none;
+  opacity: 0;
+  z-index: 2;
+  position: fixed;
+  box-shadow: 0 0 5px 10px rgb(78, 76, 66);
+ 
+}
+
+.review_show{  
+  animation-name:in_out;
+  animation-duration: .5s;
+  animation-iteration-count:1;  
+ 
+}
+
+.review_hide{  
+  animation-name:hideme;
+  animation-duration: .5s;
+  animation-iteration-count:1; 
+ 
+}
+
+@keyframes in_out{
+0%    { display: none; opacity: 0; transform: translate(-100px, 0)}
+100%  { display: flex; opacity: 1; transform: translate(0, 0)}
+}
+
+@keyframes hideme{
+  0%    { opacity: 1; transform: translate(0,0)}
+  100%  { opacity: 0; transform: translate(-100px,0)}
+  }
+
+  .menu{
+    width: 100%;
+    background-color:blue;
+    color: white;
+    font-family: cursive;
+    font-size: 1.5em;
+    text-align: right;
+  }
+
+  .logowanie{
+   align-items: center;
+    display:flex;
+    flex-flow: column nowrap;
+    width: 40em;
+    height: 10em;
+    background-color: chocolate;
+    color: white;
+    border-radius: 10px;
+
+
+  }
+
+  .end{
+    width: 100%;
+    background-color: black;
+    color: pink;
+    font-size: 1.5em;
+    text-align: center;
+    letter-spacing: 1.5px;
+
+  }

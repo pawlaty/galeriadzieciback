@@ -1,0 +1,56 @@
+ //$this->template->title=__('Login');
+             //   if(isset($_POST['submit'])){
+                //if (Auth::instance()->logged_in()) {
+                //    echo 'zalogowany';
+                //    echo Auth::instance()->get_user();
+                //    if (Auth::instance()->logged_in('admin')) {
+                //    echo 'to jest admin';
+                //   }
+                //}
+                // else {
+                //    echo "User is not logged in";
+                //}
+
+
+ /*
+        if($_POST){
+          //  try{
+             //   $post = $this->request->post();
+             
+                $success = Auth::instance()->login($_POST['log_name'], $_POST['log_pass']);
+                echo 'sssss';
+                if($success){
+                    echo "zalogowany";
+                }else{
+                 $this->redirect('logowanie/index');
+                }  
+         //   }
+           // catch(ORM_Validation_Exception $e)
+         //   {
+         //        $errors=$e->errors('model');
+          //  }
+         }    */     
+         //  
+           
+
+    public function action_logout() {
+    Auth::instance()->logout();
+    $this->request->redirect('/blog');
+}
+   
+     
+
+       /* public function action_register() {
+            $client = ORM::factory('user');
+            $client->email = "admin@email.com";
+            $client->username = "admin";
+            $client->password = "admin";
+            $client->save();
+ 
+            //$role = ORM::factory('role','1');
+            //$client->add('roles',$role);
+            //$client->save();
+        }*/
+}
+
+

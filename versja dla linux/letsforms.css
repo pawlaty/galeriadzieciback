@@ -1,0 +1,88 @@
+h1, h2, h3, h4{
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 0px;
+  padding-bottom:0px;
+  font-family: cursive;
+}
+
+p{
+	text-align:center;
+	/*font-size: 1.5em;*/
+}
+h1{
+	font-size: 3rem;
+	text-shadow: 2px 2px 4px  blue;
+}
+ button{
+	  border-radius:6px;
+	  font-size:.8em;
+	  box-shadow: 2px 2px 2px 1px green;
+	  transition: box-shadow .6s ease-in-out;
+	  align-self: center;
+  }
+  
+  button a{
+	  text-decoration:none;
+  }
+  
+  a{
+	  color:yellowgreen;
+	  font-size:1.6rem;
+	  font-family:cursive;
+  }
+  
+  button:hover{
+	box-shadow: 0px 0px 3px 3px white;  
+  }
+  
+  textarea{
+	
+	height: 10rem;
+	resize: none;
+	overflow-x: none;
+	overflow-y:auto;
+	font-size:2.5rem;
+	font-family: NewTimesRoman;
+	background: cornsilk;
+	border-radius: .5em;
+	width:auto;
+	max-width: 80%;
+	
+	
+	
+  }
+  input{
+	  /*max-width:fit-content;*/
+	  color:yellow;
+	  font-size:2rem;
+	  font-family:cursive;
+	 
+  }
+  
+   input[type=label],input[type=text],input[type=password], select{
+	  align-self:center;
+	  max-width:93%;
+	  color:black;
+	  font-size:2rem;
+	  font-family:cursive;
+	  background-color: #3CBC8D;
+	  box-sizing: border-box;
+  }
+  input[type=label]::active,input[type=text]::active,input[type=password]::active{
+	 background-color: #9C9C9D; 
+  }
+  
+  input[type=file]{
+	  width:max-content;
+	  max-width:100%;
+  }
+  
+ select{
+	
+	width:12rem;
+	background-color:#3CB;	
+	
+  }
+  
+ 
